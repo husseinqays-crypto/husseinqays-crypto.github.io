@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>امتحانات المركز</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="container between">
+    <div>
+      <a class="back" href="./index.html">← رجوع</a>
+      <h1 id="branchTitle">امتحانات</h1>
+      <p id="branchNote" class="muted"></p>
+    </div>
+    <div class="tools">
+      <button id="reloadBtn" class="btn">تحديث</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <p id="empty" class="empty" hidden>لا توجد امتحانات حالياً.</p>
+    <ul id="exams" class="list"></ul>
+  </main>
+
+  <script src="./js/branches.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
