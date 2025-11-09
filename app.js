@@ -50,7 +50,6 @@ function render(items) {
         <div class="meta">
           <span class="badge">📅 ${dayName} ${date}</span>
           <span class="badge">⏰ ${start}${end ? " – " + end : ""}</span>
-          <span class="badge">⌛ ${dur} دقيقة</span>
           <span class="badge">📍 ${loc}</span>
           <span class="badge">🎓 ${grade}</span>
           ${fromLec && toLec ? `<span class="badge">📖 من المحاضرة ${fromLec} إلى ${toLec}</span>` : ""}
