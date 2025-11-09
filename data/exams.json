@@ -10,6 +10,10 @@
     "description": "يغطي الوحدات 1–5 مع أسئلة اختيار من متعدد ومسائل تطبيقية.",
     "notes": "يُحب الحضور قبل الساعة 10.",
     "more_info_url": ""
+    "start_time": "09:00",
+"end_time": "11:00",
+"lecture_from": 1,
+"lecture_to": 5
   },
   {
     "id": 2,
@@ -22,5 +26,9 @@
     "description": "يغطي الوحدات 6–10 مع مسائل تطبيقية.",
     "notes": "يُفضل الحضور قبل الموعد بربع ساعة.",
     "more_info_url": ""
+    "start_time": "09:00",
+"end_time": "11:00",
+"lecture_from": 1,
+"lecture_to": 5
   }
 ]
