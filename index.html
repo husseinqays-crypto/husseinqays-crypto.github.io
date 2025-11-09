@@ -1,24 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>دورة 1-8 و 1-6</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="موقع بسيط لعرض تواريخ الامتحانات مع شرح لكل امتحان">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اختيار المركز / النمط</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>📅 جدول دورة ١-٦ و ١-٨</h1>
+  <header class="container">
+    <h1>اختر المركز / النمط</h1>
+    <p class="muted">اضغط على أحد الخيارات للانتقال إلى صفحة الامتحانات الخاصة به</p>
   </header>
 
-  <main>
-    <ul id="exams" class="cards" aria-live="polite"></ul>
-    <p id="empty" hidden>لا توجد امتحانات حالياً.</p>
+  <main class="container">
+    <ul id="grid" class="grid"></ul>
   </main>
 
-  <footer></footer>
-
-  <script src="app.js"></script>
+  <script src="./js/branches.js"></script>
+  <script>
+    // توليد شبكة الخيارات من BRANCHES المعرّفة في branches.js
+    const grid = document.getElementById("grid");
+    grid.innerHTML = Object.values(BRANCHES).map((b) => `
+      <li class="tile">
+        <a href="./exams.html?b=${encodeURIComponent(b.slug)}">
+          <span class="tile-title">${b.label}</span>
+          <span class="tile-sub">${b.note || ""}</span>
+        </a>
+      </li>
+    `).join("");
+  </script>
 </body>
 </html>
