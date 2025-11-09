@@ -53,7 +53,7 @@ function render(items) {
           <span class="badge">⌛ ${dur} دقيقة</span>
           <span class="badge">📍 ${loc}</span>
           <span class="badge">🎓 ${grade}</span>
-          ${fromLec && toLec ? `<span class="badge">📖 من الوحدة ${fromLec} إلى ${toLec}</span>` : ""}
+          ${fromLec && toLec ? `<span class="badge">📖 من المحاضرة ${fromLec} إلى ${toLec}</span>` : ""}
         </div>
         <p>${desc}</p>
         ${notes ? `<p class="notes">ملاحظات: ${notes}</p>` : ""}
