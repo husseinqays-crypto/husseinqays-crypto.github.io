@@ -40,11 +40,11 @@ function render(items) {
     const fromLec = ex?.lecture_from ?? null;
     const toLec   = ex?.lecture_to ?? null;
 
-    // تجنّب Invalid Date
+    // التحقق من صحة التاريخ قبل توليد اسم اليوم
     const validDate = date && !Number.isNaN(new Date(date).getTime());
     const dayName = validDate
       ? new Date(date).toLocaleDateString("ar-SA", { weekday: "long" })
-      : "—";
+      : "";
 
     return `
       <li class="card">
