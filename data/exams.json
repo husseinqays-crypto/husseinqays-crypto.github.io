@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "exam_number": "EX-101",
     "title": "الامتحان الأول",
     "date": "2025-11-14",
     "start_time": "7:00pm",
@@ -15,10 +16,11 @@
   },
   {
     "id": 2,
+    "exam_number": "EX-102",
     "title": "الامتحان الثاني",
     "date": "2025-11-16",
-    "end_time": "11:00am",
     "start_time": "8:00pm",
+    "end_time": "11:00am",
     "location": "معهد قمة النجاح",
     "grade": "الفصل الثالث",
     "lecture_from": 1,
