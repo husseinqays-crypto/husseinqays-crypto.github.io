@@ -1,0 +1,24 @@
+/* تنسيق بسيط متوافق مع العربية */
+:root {
+  --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#eee; --warn:#fff7cc;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Naskh Arabic UI", "Noto Kufi Arabic", "Amiri", sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin:0; padding:0 1rem 2rem; background:var(--bg); color:var(--fg); }
+header { position:sticky; top:0; background:#fff; padding:1rem 0; border-bottom:1px solid var(--border); z-index:10; }
+h1 { margin:0 0 .5rem; font-size:1.6rem; }
+.lead { margin:.25rem 0 1rem; color:var(--muted); }
+.filters { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; }
+.filters input, .filters select, .filters button {
+  padding:.55rem .7rem; border:1px solid #ddd; border-radius:10px; background:#fff;
+}
+.filters button { cursor:pointer; }
+.cards { list-style:none; padding:0; display:grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap:1rem; margin-top:1rem; }
+.card { background:var(--card); padding:1rem; border:1px solid var(--border); border-radius:14px; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+.card h3 { margin:.25rem 0 .6rem; font-size:1.1rem; }
+.meta { display:flex; gap:.5rem; flex-wrap:wrap; color:#333; }
+.badge { display:inline-block; padding:.15rem .5rem; border:1px solid var(--border); border-radius:999px; font-size:.85rem; }
+.notes { background:var(--warn); padding:.5rem; border-radius:8px; margin-top:.5rem; }
+.error { color:#b00020; }
+footer { margin-top:1.25rem; color:var(--muted); }
+a { color:inherit; }
