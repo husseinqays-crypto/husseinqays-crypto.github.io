@@ -40,7 +40,8 @@ function render(items) {
     const fromLec = ex?.lecture_from ?? null;
     const toLec   = ex?.lecture_to ?? null;
 
-    const dayName = date !== "—"
+    // التعامل بحذر مع التاريخ لتفادي Invalid Date
+    const dayName = date && date !== "—" && !Number.isNaN(new Date(date).getTime())
       ? new Date(date).toLocaleDateString("ar-SA", { weekday: "long" })
       : "—";
 
@@ -48,7 +49,7 @@ function render(items) {
       <li class="card">
         <h3>${title}</h3>
         <div class="meta">
-          <span class="badge">🆔 رقم الامتحان: ${exam.exam_number}</span>
+          <span class="badge">🆔 رقم الامتحان: ${ex?.exam_number ?? "—"}</span>
           <span class="badge">📅 ${dayName} ${date}</span>
           <span class="badge">⏰ ${start}${end ? " – " + end : ""}</span>
           <span class="badge">📍 ${loc}</span>
@@ -64,6 +65,3 @@ function render(items) {
 
   emptyEl.hidden = items.length !== 0;
 }
-
-// تشغيل
-load();
