@@ -1,4 +1,4 @@
-:root { --bg:#0f1115; --card:#151823; --text:#e6e7ea; --muted:#9aa0aa; --accent:#5aa3ff; }
+:root { --bg:#000000; --card:#151823; --text:#e6e7ea; --muted:#9aa0aa; --accent:#5aa3ff; }
 *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Tahoma,Arial}
 .container{max-width:980px;margin:auto;padding:16px}
 .between{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
