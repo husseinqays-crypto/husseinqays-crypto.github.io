@@ -48,7 +48,7 @@ function render(items) {
       <li class="card">
         <h3>${title}</h3>
         <div class="meta">
-          <span class="badge">#️⃣ رقم الامتحان: ${examNumber}</span>
+          <span class="badge">🆔 رقم الامتحان: ${exam.exam_number}</span>
           <span class="badge">📅 ${dayName} ${date}</span>
           <span class="badge">⏰ ${start}${end ? " – " + end : ""}</span>
           <span class="badge">📍 ${loc}</span>
